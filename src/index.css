@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-futura font-medium mb-2
+  }
+  h1 {
+    @apply text-4xl mb-2;
+  }
+  h2 {
+    @apply text-3xl mb-2;
+  }
+  h3 {
+    @apply text-2xl mb-2;
+  }
+  a {
+    @apply text-utherverse-blue font-bold;
+  }
+  p {
+    @apply leading-7;
+  }
+
+  .sidebar-list {
+    @apply mb-8;
+  }
+  .sidebar-list li {
+    @apply py-2 text-gray-800
+  }
+
+  ul.checkmark, ul.checkbox {
+    list-style: none;
+  }
+
+  ul.checkmark li::before, ul.checkbox li::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url("./assets/checkbox.svg");
+    margin-right: .5em;
+  }
+}
